@@ -1,0 +1,149 @@
+/* aggiunte da nereo */
+
+.wmd-preview ul, .wmd-preview ol,
+.fumetto ul, .fumetto ol{
+	margin-bottom:8px;
+}
+.wmd-preview ul li, .fumetto ul li{
+	list-style:square outside;
+	margin-left:20px;
+}
+.wmd-preview ol li, .fumetto ol li{
+	list-style:decimal outside;
+	margin-left:20px;
+}
+.wmd-preview blockquote, .fumetto blockquote{
+	border-left: 5px solid;
+	margin: 0 10px 8px;
+	padding: 4px 6px;
+	quotes: "\201C" "\201D";
+	background: rgba(255, 255, 255, 0.2);
+}
+.wmd-preview blockquote:before, .fumetto blockquote:before{
+	content: open-quote;
+	font-size: 32px;
+	line-height: 0px;
+	margin-right: 5px;
+	vertical-align: -10px;
+}
+.wmd-preview blockquote p, .fumetto blockquote p{
+	display: inline;
+}
+.wmd-preview h1, .fumetto h1{
+	font-size:15px;
+	margin:0 0 8px;
+}
+.wmd-preview h2, .fumetto h2{
+	font-size:14px;
+	margin:0 0 6px;
+}
+.wmd-preview pre code, .fumetto pre code{
+	display: block;
+	margin: 10px 15px;
+	color: #FFF;
+	padding: 8px;
+	background: #3A3A3A;
+	text-shadow: 1px 2px 1px #000;
+}
+
+
+/* proposti da pagedown */
+
+.wmd-panel{
+}
+
+.wmd-button-bar{
+	width: 100%;
+	background-color: Silver; 
+}
+
+.wmd-input{
+}
+
+.wmd-preview:before{
+	font-size:11px;
+	content: "PREVIEW (puoi usare il markdown!!!):";
+	color:#666;
+}
+.wmd-preview{
+}
+
+
+.fumetto ul.wmd-button-row{
+	position: relative; 
+	margin:10px 5px 5px;
+	padding: 0px;  
+	height: 20px;
+}
+.fumetto  ul.wmd-button-row  li{
+	margin:0;
+}
+
+.fumetto  ul.wmd-button-row  li.wmd-spacer{
+	width: 1px; 
+	height: 20px; 
+	margin-left: 12px;
+	
+	position: absolute;
+	background-color: Silver;
+	display: inline-block; 
+	list-style: none;
+}
+
+.wmd-button{
+	width: 20px;
+	height: 20px;
+	padding-left: 2px;
+	padding-right: 3px;
+	position: absolute;
+	display: inline-block;
+	list-style: none;
+	cursor: pointer;
+}
+
+.wmd-button > span{
+	background-image: url(../IMAGES/markdown/wmd-buttons.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.wmd-spacer1{
+	left: 50px;
+}
+.wmd-spacer2{
+	left: 175px;
+}
+.wmd-spacer3{
+	left: 300px;
+}
+
+
+
+
+.wmd-prompt-background{
+	background-color: Black;
+}
+
+.wmd-prompt-dialog{
+	border: 1px solid #999999;
+	background-color: #F5F5F5;
+}
+
+.wmd-prompt-dialog > div{
+	font-size: 0.8em;
+}
+
+
+.wmd-prompt-dialog > form > input[type="text"]{
+	border: 1px solid #999999;
+	color: black;
+}
+
+.wmd-prompt-dialog > form > input[type="button"]{
+	border: 1px solid #888888;
+	font-size: 0.8em;
+	font-weight: bold;
+}
