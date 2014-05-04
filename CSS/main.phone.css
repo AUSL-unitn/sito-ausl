@@ -1,0 +1,99 @@
+/* stile generale */
+
+#ausl, #ausl>tbody, #ausl>tbody>tr, #ausl>tbody>tr>td,
+table.fumetto, table.fumetto>tbody, table.fumetto>tbody>tr, table.fumetto>tbody>tr>td, table.fumetto>tbody>tr>th{
+	display:block;
+	height:auto;
+	width:auto;
+}
+table.fumetto img{
+	max-width:90%;
+}
+
+#ausl{
+	min-width:250px;
+}
+
+#leftComment{
+	width:auto;
+	height:auto;
+	padding:30px;
+	margin-bottom:40px 30px;
+}
+
+#rightComment{
+	padding:0 5px;
+}
+
+#mbc{
+	position:static;
+	padding:0;
+	margin: 80px auto 0;
+	font-size:14px;
+	width:auto;
+}
+
+h3.big{
+	font-size:24px;
+}
+
+table.fumetto.compressed{
+	margin-top:5px;
+}
+table.fumetto{
+	margin:5px 0;
+}
+table.fumetto>tbody>tr>th>div{
+	border:none;
+	z-index: 100;
+	left:-25px;
+	margin-top: 40px;
+}
+table.fumetto>tbody>tr>th>div>p{
+	z-index: 100;
+	left: -108px;
+	border: 2px solid #666;
+	visibility: visible;
+	opacity:1;
+	-webkit-border-radius:0;
+	border-radius:0;
+	-webkit-transition: left 0.3s;
+	transition: left 0.3s;
+}
+table.fumetto>tbody>tr>th>div>p:hover, table.fumetto>tbody>tr>th>div>p.exposed{
+	left: 25px;
+}
+table.fumetto>tbody>tr>td{
+	-webkit-border-radius:0;
+	border-radius:0;
+	z-index: 10;
+}
+
+
+/* per il blog */
+#inserimento{
+	height: auto;
+	margin: 5px 0;
+	display:none;
+}
+#inserimento.active{
+	margin: 5px 0;
+	display:block;
+}
+
+p.chi{
+	height:auto;
+}
+
+input[type=text], input[type=password], textarea {
+	width:92%;
+	margin:0 auto 8px;
+}
+
+.join textarea, .join textarea:focus{
+	height:80px;
+}
+
+.wmd-button-row, .wmd-preview{
+	display:none!important;
+}
