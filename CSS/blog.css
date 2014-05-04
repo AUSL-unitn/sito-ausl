@@ -1,0 +1,274 @@
+.btn{
+	display:block;
+	margin:10px auto;
+	width:224px;
+	height:224px;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+}
+
+table.fumetto h3{
+	font-weight:bold;
+}
+
+#inserimento {
+	height: 630px;
+	margin: -693px 0 60px;
+	-webkit-transition:margin 0.5s;
+	transition:margin 0.5s;
+}
+#inserimento.active{
+	margin-top:0;
+}
+
+table.fumetto:hover>tbody>tr>th>div{
+	z-index:100;
+}
+table.fumetto>tbody>tr>th>div>p{
+	font-size: 12px;
+	text-align: center;
+	border: 1px solid #666;
+	width: 130px;
+	margin: 0;
+	position: relative;
+	top: -24px;
+	left: -143px;
+	background: #FFF;
+	padding: 5px;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-border-radius: 6px 0 0 6px;
+	border-radius: 6px 0 0 6px;
+	-webkit-box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+table.fumetto:hover>tbody>tr>th>div>p{
+	visibility:visible;
+	opacity:1;
+}
+
+table.fumetto img{
+	max-width:500px;
+	display:block;
+	margin: 10px auto;
+}
+
+.join textarea{
+	height:50px;
+	-webkit-transition:height 0.2s;
+	transition:height 0.2s;
+	-webkit-transition-delay:0.5s;
+	transition-delay:0.5s;
+}
+.join textarea:focus{
+	height:150px;
+	-webkit-transition-delay:0;
+	transition-delay:0;
+}
+.join input[type=submit]{
+	margin-bottom:20px;
+	display:inline;
+}
+.loader{
+	display:inline-block;
+	cursor:pointer;
+	width:32px;
+	height:32px;
+	vertical-align: top;
+	margin: 8px 10px -16px;
+	background:url(../IMAGES/loader/blocksx.png) no-repeat center;
+}
+.loader.active{
+	background:url(../IMAGES/loader/blocks.gif) no-repeat center;
+}
+.joincomment {
+	max-height: 300px;
+	overflow: hidden;
+	-webkit-transition: max-height 0.6s;
+	transition: max-height 0.6s;
+	margin-bottom:16px;
+}
+.joincomment.maxh{
+	max-height: none;
+}
+.joinflag{
+	cursor: pointer;
+	border-top: 1px solid #333;
+	position:absolute;
+	right:10px;
+	height: 14px;
+	padding-right: 15px;
+	width: 200px;
+	font-size: 11px;
+	text-align: right;
+	background: url(../IMAGES/post/tongue.png) no-repeat no-repeat right bottom;
+	-webkit-transition: height 0.3s;
+	transition: height 0.3s;
+}
+.joinflag i.c{display:none}
+.joinflag:hover{
+	height:18px;
+}
+.joinflag.opened i.c{display:inline;}
+.joinflag.opened i.o{display:none;}
+
+#evento .loader{
+	display:none;
+}
+#evento .loader.active{
+	display:block;
+	margin:8px 0;
+}
+#evento input[type=submit].wait{
+	display:none;
+}
+p.chi{
+	padding-left:20px;
+	height:18px;
+	background:url(../IMAGES/post/com.png) no-repeat no-repeat 5px 3px;
+	font-size:11px;
+	margin:0;
+	font-weight:bold;
+}
+div.com{
+	padding-left:20px;
+}
+
+.leftbuts{
+	cursor:pointer;
+	background: #444;
+	text-align:center;
+	color: #FFF;
+	border:1px solid #333;
+	padding:6px 10px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+.leftbuts:hover{
+	background:#777;
+}
+.leftbuts:hover:active, .leftbuts:active{
+	background:#333;
+}
+#newpost{
+	margin:8px 0;
+}
+#ilmeteo{
+	margin:8px 0 30px;
+}
+
+
+
+/* colori per l'arrampicata */
+
+/* verde */
+body.blog1 table.fumetto.green>tbody>tr>th div{
+	border-color: transparent #DAD0BD transparent transparent;
+}
+body.blog1 table.fumetto.green>tbody>tr>td, body.blog1 table.fumetto.green>tbody>tr>th>div>p{
+	background:#DAD0BD;
+}
+/* blu */
+body.blog1 table.fumetto.blue h3{
+	color:#fff;
+}
+body.blog1 table.fumetto.blue h4{
+	color:#ffeecc;
+}
+body.blog1 table.fumetto.blue{
+	color:#FFCEA1;
+}
+body.blog1 table.fumetto.blue>tbody>tr>th div{
+	border-color: transparent #CF5E32 transparent transparent;
+}
+body.blog1 table.fumetto.blue>tbody>tr>td, body.blog1 table.fumetto.blue>tbody>tr>th>div>p{
+	background:#CF5E32;
+}
+/* rosso */
+body.blog1 table.fumetto.red>tbody>tr>th div{
+	border-color: transparent #DBA365 transparent transparent;
+}
+body.blog1 table.fumetto.red>tbody>tr>td, body.blog1 table.fumetto.red>tbody>tr>th>div>p{
+	background:#DBA365;
+}
+
+
+
+
+/* colori per lo sci alpinismo */
+
+/* verde */
+body.blog2 table.fumetto.green>tbody>tr>th div{
+	border-color: transparent #CDD8D7 transparent transparent;
+}
+body.blog2 table.fumetto.green>tbody>tr>td, body.blog2 table.fumetto.green>tbody>tr>th>div>p{
+	background:#CDD8D7;
+}
+/* blu */
+body.blog2 table.fumetto.blue>tbody>tr>th div{
+	border-color: transparent #DEF3F1 transparent transparent;
+}
+body.blog2 table.fumetto.blue>tbody>tr>td, body.blog2 table.fumetto.blue>tbody>tr>th>div>p{
+	background:#DEF3F1;
+}
+/* rosso */
+body.blog2 table.fumetto.red>tbody>tr>th div{
+	border-color: transparent #A1D3F0 transparent transparent;
+}
+body.blog2 table.fumetto.red>tbody>tr>td, body.blog2 table.fumetto.red>tbody>tr>th>div>p{
+	background:#A1D3F0;
+}
+
+
+
+
+/* colori per l'escursionismo */
+
+/* verde */
+body.blog3 table.fumetto.green>tbody>tr>th div{
+	border-color: transparent #ACE448 transparent transparent;
+}
+body.blog3 table.fumetto.green>tbody>tr>td, body.blog3 table.fumetto.green>tbody>tr>th>div>p{
+	background:#ACE448;
+}
+/* blu */
+body.blog3 table.fumetto.blue>tbody>tr>th div{
+	border-color: transparent #76D869 transparent transparent;
+}
+body.blog3 table.fumetto.blue>tbody>tr>td, body.blog3 table.fumetto.blue>tbody>tr>th>div>p{
+	background:#76D869;
+}
+/* rosso */
+body.blog3 table.fumetto.red>tbody>tr>th div{
+	border-color: transparent #BFC595 transparent transparent;
+}
+body.blog3 table.fumetto.red>tbody>tr>td, body.blog3 table.fumetto.red>tbody>tr>th>div>p{
+	background:#BFC595;
+}
+
+
+/* colori per il development */
+
+/* green - evento */
+body.blog4 table.fumetto.green>tbody>tr>th div{
+	border-color: transparent #FFDC98 transparent transparent;
+}
+body.blog4 table.fumetto.green>tbody>tr>td, body.blog4 table.fumetto.green>tbody>tr>th>div>p{
+	background:#FFDC98;
+}
+/* blue - proposta */
+body.blog4 table.fumetto.blue>tbody>tr>th div{
+	border-color: transparent #FF9A2C transparent transparent;
+}
+body.blog4 table.fumetto.blue>tbody>tr>td, body.blog4 table.fumetto.blue>tbody>tr>th>div>p{
+	background:#FF9A2C;
+}
+/* red - discussione */
+body.blog4 table.fumetto.red>tbody>tr>th div{
+	border-color: transparent #B0CDEC transparent transparent;
+}
+body.blog4 table.fumetto.red>tbody>tr>td, body.blog4 table.fumetto.red>tbody>tr>th>div>p{
+	background:#B0CDEC;
+}
